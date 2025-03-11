@@ -1,19 +1,17 @@
-
 class spiralMatrix {
-
     public static void spiralMatrix(int mat[][]){
         int startRow = 0;
         int startCol = 0;
         int endRow = mat.length-1;
         int endCol = mat[0].length-1;
-        
+
         while(startRow <= endRow && startCol <= endCol){
             //top
             for(int i=startCol ; i<=endCol ; i++){
                 System.out.print(mat[startRow][i]+" ");
             }
 
-            // right
+            //right
             for(int j=startRow+1 ; j<=endRow ; j++){
                 System.out.print(mat[j][endCol]+" ");
             }
@@ -35,8 +33,8 @@ class spiralMatrix {
             }
 
             startRow++;
-            endRow--;
             startCol++;
+            endRow--;
             endCol--;
         }
     }
@@ -44,10 +42,8 @@ class spiralMatrix {
     public static void main(String[] args) {
         int mat[][] = {
             {1, 5, 0},
-            {1, 5, 0},
             {1, 5, 0}
         };
-
         spiralMatrix(mat);
     }
 }
