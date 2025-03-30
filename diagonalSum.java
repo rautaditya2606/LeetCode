@@ -18,6 +18,6 @@ class diagonalSum {
             {12, 15, 40},
             {1, 5, 10}
         };
-        System.out.println(sum(mat));;
+        System.out.println(sum(mat));
     }
 }
